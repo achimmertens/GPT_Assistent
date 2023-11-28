@@ -2,15 +2,15 @@ import json
 import os
 
 def create_assistant(client):
-  assistant_file_path = 'assistant.json'
+  assistant_file_path = 'xxxassistant_chicken.json'
 
   if os.path.exists(assistant_file_path):
     with open(assistant_file_path, 'r') as file:
       assistant_data = json.load(file)
       assistant_id = assistant_data['assistant_id']
-      print("Loaded existing assistant ID.")
+      print("Loaded existing assistant ID, ", assistant_id)
   else:
-    file = client.files.create(file=open("knowledge.docx", "rb"),
+    file = client.files.create(file=open("data/data.txt", "rb"),
                                purpose='assistants')
 
     assistant = client.beta.assistants.create(instructions="""

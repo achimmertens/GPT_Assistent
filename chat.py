@@ -5,8 +5,8 @@ url = 'http://localhost:8080/chat'  # Ersetzen Sie 'localhost:8080' durch Ihre t
 
 # Definieren der Daten für die Anfrage
 data = {
-    'thread_id': 'thread_yWtod8uwsrOKgaoFBndddADW',
-    'message': 'How much is your solar system?'
+    'thread_id': 'thread_PLGeY7s7ItgrGkvVDPzUXFZR',
+    'message': 'Do we have a chicken with the name Hans?'
 }
 
 # Senden der POST-Anfrage an den /chat-Endpunkt
